@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+</head>
+
+
+
+<body>
+  <div style="width:500px;height: 700px;background-color: rgb(228, 182, 182);">
+    <form name="frmEntry" action="processor.html" method="post">
+      <fieldset>
+        <legend><strong></strong>Basic Inputs</legend>
+        <p>
+          <label for="txtUserName">User Name</label>
+          <input type="text" name="txtUserName" id="txtUserName" value=""maxlength="10"/>
+        </p>
+        
+    
+         <p>
+          <label for="txtPassword">Password: </label>
+          <input type="password" name="txtPassword" id="txtPassword" value="" maxlength="10"/>
+         </p>
+          <p>
+            <label for="rdbGender">Gender</label>
+          <input type="radio" name="rdbGender" id="rdbGender" value="m" checked/>Male
+          <input type="radio" name="rdbGender" id="rdbGender" value="f" checked/>Fe-Male
+          </p>
+
+          <p>
+            <label for="chkHobbies">Hobbies</label>
+            <input type="checkbox" name="chkHobbies" id="chkHobbies" value="p" checked>Playing
+            <input type="checkbox" name="chkHobbies" id="chkHobbies" value="m">Music
+            <input type="checkbox" name="chkHobbies" id="chkHobbies" value="d">Drawing
+          </p>
+
+          <!-- to add text area -->
+          <p>
+            <label for="txtAddrss">Address</label>
+            <textarea name="txtAddrss" id="txtAddrss" cols="50" rows="5" wrap="hard" value=""></textarea>
+          </p>
+
+          <!-- For dropdown option
+          by adding attr multiple, it allows multiple selection -->
+
+          <p>
+            <label for="slctQualification">Qualification</label>
+            <select name="slctQualification" id="slctQualification">
+              <option value="i" selected>Intern</option>
+              <option value="u">UG</option>
+              <option value="p">PG</option>
+            </select>
+          </p>
+      </fieldset>
+
+
+
+      <fieldset>
+        <legend><strong>Advance Inputs</strong></legend>
+      </fieldset>
+
+      <fieldset>
+        <legend><strong>Submit</strong></legend>
+        <input type="submit" name="btnSubmit" id="btnSubmit" value="SUBMIT">
+        <input type="reset" name="btnReset" id="btnReset" value="RESET">
+      </fieldset>
+
+    </form>
+
+  </div>
+</body>
+</html>

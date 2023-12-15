@@ -1,0 +1,28 @@
+#box{
+  height: 105px;
+  width: 105px;
+  border: 1px solid red;
+  background-color: black;
+  /* background-image: url("titk.png"); */
+  /* //padding: 10px; */
+}
+
+.dot {
+  display: inline-block;
+  width: 2,84px;
+  height: 2.81px;
+  border-radius: 50%;
+  background-color: black;
+  margin-right: 5px; /* Add space between dots */
+}
+.box {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #ddd;
+}
+
+::before {
+  content: "." attr(repeat, 100) " ";
+  display: inline-block;
+  text-indent: -5px; /* Adjust for spacing */
+}

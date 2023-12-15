@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>repeat</title>
+  <link rel="stylesheet" href="new.css">
+</head>
+<body>
+  <section>
+    <span id="container"></span>
+  </section>
+  
+  <script>
+    const container = document.getElementById("container");
+for (let i = 0; i < 5; i++) {
+  const newSpan = document.createElement("span");
+  newSpan.textContent = '';
+  container.appendChild(newSpan);
+  //document.write(</br>);
+}
+
+  </script>
+</body>
+</html>

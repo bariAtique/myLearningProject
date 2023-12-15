@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WhileLoop</title>
+</head>
+<body>
+  <script>
+    //some of all digits
+    let num = 124549999
+    let lastDigit = 0;
+    let sumOfAllDigits=0;
+
+    while(num != 0){
+      lastDigit=num % 10;
+      sumOfAllDigits = sumOfAllDigits+lastDigit;
+      num = parseInt(num/10);
+    }
+    document.write("Sum of all Digit :" , sumOfAllDigits,"<br>");
+    
+  </script>
+  
+</body>
+</html>

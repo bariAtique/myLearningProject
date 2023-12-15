@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>while sup of all digit</title>
+</head>
+<body>
+ <script>
+  // Function to calculate the sum of digits in a number
+function sumOfDigits(number) {
+    let sum = 0;
+    while (number > 0) {
+        sum += number % 10;
+        number = Math.floor(number / 10);
+    }
+    return sum;
+}
+
+// Get user input
+let userInput = prompt("Enter a number:");
+
+// Convert user input to a number
+let userNumber = parseInt(userInput);
+
+// Check if the input is a valid number
+if (!isNaN(userNumber)) {
+    // Calculate and display the sum of digits
+    let result = sumOfDigits(userNumber);
+    alert("The sum of digits is: " + result);
+} else {
+    // Display an error message for invalid input
+    alert("Invalid input. Please enter a valid number.");
+}
+
+ </script>
+</body>
+</html>
